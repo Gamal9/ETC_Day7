@@ -19,7 +19,7 @@
                 <Entry Margin="10" Placeholder="confierm Password" x:Name="EntryCon"/>
                 <Entry Margin="10" Placeholder="Phone Number" x:Name="EntryNumber"/>
                 <StackLayout Margin="20,10" VerticalOptions="EndAndExpand">
-                    <Button Text="SIGN UP" BackgroundColor="Green" TextColor="White"/>
+                    <Button Clicked="Button_Clicked" Text="SIGN UP" BackgroundColor="Green" TextColor="White"/>
                     <Label Text="Login" FontSize="Title" Margin="10"/>
                 </StackLayout>
             </StackLayout>
