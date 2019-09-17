@@ -21,7 +21,6 @@ namespace ETC_Day7.Services
             Connection = DependencyService.Get<ISqliteInterface>().GetConnection();
             await Connection.CreateTableAsync<User>();
         }
-
         public async Task<int> InsertNewUser(User user)
         {
             return await Connection.InsertAsync(user);
@@ -30,5 +29,7 @@ namespace ETC_Day7.Services
         {
             return await Connection.DeleteAsync(user);
         }
+        
+
     }
 }
