@@ -13,10 +13,10 @@
             </Grid.RowDefinitions>
             
             <StackLayout Margin="10" Grid.Row="1">
-                <Entry Margin="10" Placeholder="Email ID" x:Name="EntryEmail"/>
+                <Entry Margin="10" TextChanged="EntryEmail_TextChanged" Placeholder="Email ID" x:Name="EntryEmail"/>
                 <Entry Margin="10" Placeholder="User Name" x:Name="EntryName"/>
-                <Entry Margin="10" Placeholder="Password" x:Name="EntryPass"/>
-                <Entry Margin="10" Placeholder="confierm Password" x:Name="EntryCon"/>
+                <Entry Margin="10" Keyboard="Email" IsPassword="True" Placeholder="Password" x:Name="EntryPass"/>
+                <Entry Keyboard="Numeric" Margin="10" Placeholder="confierm Password" x:Name="EntryCon"/>
                 <Entry Margin="10" Placeholder="Phone Number" x:Name="EntryNumber"/>
                 <StackLayout Margin="20,10" VerticalOptions="EndAndExpand">
                     <Button Clicked="Button_Clicked" Text="SIGN UP" BackgroundColor="Green" TextColor="White"/>

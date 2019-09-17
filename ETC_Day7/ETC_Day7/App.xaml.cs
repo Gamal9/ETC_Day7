@@ -10,11 +10,11 @@ namespace ETC_Day7
         public App()
         {
             InitializeComponent();
-
-            MainPage = new NavigationPage(new Login())
-            {
-                BarBackgroundColor= Color.Purple
-            };
+            MainPage = new MainPage();
+            //MainPage = new NavigationPage(new Login())
+            //{
+            //    BarBackgroundColor= Color.Purple
+            //};
             //GenericClass<int, bool, int> cs = new GenericClass<int, bool, int>();
         }
 

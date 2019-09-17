@@ -7,7 +7,14 @@
              x:Class="ETC_Day7.MainPage">
 
     <StackLayout>
-           
+
+        <ListView x:Name="Mylist">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" Detail="{Binding Email}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </StackLayout>
 
 </ContentPage>

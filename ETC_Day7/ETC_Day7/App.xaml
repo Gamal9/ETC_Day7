@@ -6,6 +6,6 @@
              mc:Ignorable="d"
              x:Class="ETC_Day7.App">
     <Application.Resources>
-
+        
     </Application.Resources>
 </Application>

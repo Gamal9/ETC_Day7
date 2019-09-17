@@ -23,13 +23,22 @@ namespace ETC_Day7
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            User user = new User
+            if (EntryPass.Text == EntryCon.Text)
             {
-                Name = EntryName.Text,
-                Email = EntryEmail.Text,
-                Password = EntryPass.Text
-            };
-           int x = await ser.InsertNewUser(user);
+                User user = new User
+                {
+                    Name = EntryName.Text,
+                    Email = EntryEmail.Text,
+                    Password = EntryPass.Text
+                };
+                int x = await ser.InsertNewUser(user);
+            }
+            else DisplayAlert("", "الباسورد مش متوافق", "OK");
+        }
+
+        private void EntryEmail_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            
         }
     }
 }
